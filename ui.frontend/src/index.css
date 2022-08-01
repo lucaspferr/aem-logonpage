@@ -16,6 +16,8 @@
 
 /* Global styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 html,
 body {
   border: 0;
@@ -27,7 +29,7 @@ body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #E5E5E5;
 }
 
 h1,
@@ -38,6 +40,9 @@ h5,
 p,
 .nav-container,
 .rw-box {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
+  text-transform: none !important;
+  line-height: normal;
+  letter-spacing: normal !important;
   color: #000000;
 }

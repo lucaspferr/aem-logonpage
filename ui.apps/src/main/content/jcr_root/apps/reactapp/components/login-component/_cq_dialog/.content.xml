@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Login Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured"
+               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <items jcr:primaryType="nt:unstructured">
+               <login-tab1 jcr:primaryType="nt:unstructured"
+                           jcr:title="Text tab"
+                           sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <title cq-msm-lockable="./title"
+                                  fieldDescription="Adds a title"
+                                  fieldLabel="Type the desired title."
+                                  jcr:primaryType="nt:unstructured"
+                                  name="./title"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <paragraph cq-msm-lockable="./paragraph"
+                                      fieldDescription="Adds a paragraph"
+                                      fieldLabel="Type the desired paragraph."
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./paragraph"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <logintext cq-msm-lockable="./logintext"
+                                      fieldDescription="Type the desired text"
+                                      fieldLabel="Change the text over the inputs"
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./logintext"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </login-tab1>
+               <login-tab2 jcr:primaryType="nt:unstructured"
+                           jcr:title="Input and Button tab"
+                           sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <usertext cq-msm-lockable="./usertext"
+                                     fieldDescription="Type the desired text"
+                                     fieldLabel="Change the username placeholder text"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./usertext"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <passwordtext cq-msm-lockable="./passwordtext"
+                                         fieldDescription="Type the desired text"
+                                         fieldLabel="Change the password placeholder text"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./passwordtext"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <buttontext cq-msm-lockable="./buttontext"
+                                       fieldDescription="Type the desired text"
+                                       fieldLabel="Adds a button text"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./buttontext"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </login-tab2>
+            </items>
+         </tabs>
+      </items>
+   </content>
+</jcr:root>

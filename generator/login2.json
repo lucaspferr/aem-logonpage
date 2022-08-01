@@ -1,0 +1,101 @@
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+    "name": "login-component",
+    "title": "Login Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties-tabs": [
+        {
+            "id": "login-tab1",
+            "label": "Text tab",
+            "fields": [
+                "title",
+                "paragraph",
+                "logintext"
+            ]
+        },
+        {
+          "id": "login-tab2",
+          "label": "Input and Button tab",
+          "fields": [
+              "usertext",
+              "passwordtext",
+              "buttontext"
+          ]
+      }
+      ],
+      "properties": [
+        {
+          "field": "title",
+          "description": "Adds a title",
+          "label": "Type the desired title.",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "title"
+        },
+        {
+          "field": "paragraph",
+          "description": "Adds a paragraph",
+          "label": "Type the desired paragraph.",
+          "type": "textarea",
+          "json-expose": true,
+          "json-property": "paragraph"
+        },
+        {
+          "field": "logintext",
+          "description": "Type the desired text",
+          "label": "Change the text over the inputs",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "logintext"
+        },
+        {
+          "field": "usertext",
+          "description": "Type the desired text",
+          "label": "Change the username placeholder text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "usertext"
+        },
+        {
+          "field": "passwordtext",
+          "description": "Type the desired text",
+          "label": "Change the password placeholder text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "passwordtext"
+        },
+        {
+          "field": "buttontext",
+          "description": "Type the desired text",
+          "label": "Adds a button text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "buttontext"
+        }
+      ]
+    }
+  }

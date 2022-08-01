@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Body Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured"
+               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <items jcr:primaryType="nt:unstructured">
+               <body-tab1 jcr:primaryType="nt:unstructured"
+                          jcr:title="Red text"
+                          sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <rtext1 cq-msm-lockable="./rtext1"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Change the first red text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./rtext1"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <rtext2 cq-msm-lockable="./rtext2"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the second red text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./rtext2"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <rtext3 cq-msm-lockable="./rtext3"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the third red text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./rtext3"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <rtext4 cq-msm-lockable="./rtext4"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the fourth red text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./rtext4"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </body-tab1>
+               <body-tab2 jcr:primaryType="nt:unstructured"
+                          jcr:title="Black text"
+                          sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <btext1 cq-msm-lockable="./btext1"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the first black text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./btext1"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <btext2 cq-msm-lockable="./btext2"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the second black text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./btext2"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <btext3 cq-msm-lockable="./btext3"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the third black text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./btext3"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <btext4 cq-msm-lockable="./btext4"
+                                   fieldDescription="Type the desired text"
+                                   fieldLabel="Changes the fourth black text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./btext4"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </body-tab2>
+            </items>
+         </tabs>
+      </items>
+   </content>
+</jcr:root>

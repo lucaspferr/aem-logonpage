@@ -1,0 +1,68 @@
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+    "name": "footer-component",
+    "title": "Footer Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties-tabs": [
+        {
+            "id": "footer-tab",
+            "label": "Login tab",
+            "fields": [
+                "footertext",
+                "buttontext1",
+                "buttontext2"
+            ]
+        }
+      ],
+      "properties": [
+        {
+          "field": "footertext",
+          "description": "Changes the text on the footer",
+          "label": "Type the desired footer text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "footertext"
+        },
+        {
+          "field": "buttontext1",
+          "description": "Changes the white button text",
+          "label": "Type the desired reset timer button text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "buttontext1"
+        },
+        {
+          "field": "buttontext2",
+          "description": "Changes the black button text",
+          "label": "Type the desired logout button text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "buttontext2"
+        }
+      ]
+    }
+  }

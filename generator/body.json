@@ -1,0 +1,119 @@
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+    "name": "body-component",
+    "title": "Body Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties-tabs": [
+        {
+            "id": "body-tab1",
+            "label": "Red text",
+            "fields": [
+                "rtext1",
+                "rtext2",
+                "rtext3",
+                "rtext4"
+            ]
+        },
+        {
+          "id": "body-tab2",
+          "label": "Black text",
+          "fields": [
+              "btext1",
+              "btext2",
+              "btext3",
+              "btext4"
+          ]
+      }
+      ],
+      "properties": [
+        {
+          "field": "rtext1",
+          "description": "Type the desired text",
+          "label": "Change the first red text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "rtext1"
+        },
+        {
+          "field": "rtext2",
+          "description": "Type the desired text",
+          "label": "Changes the second red text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "rtext2"
+        },
+        {
+          "field": "rtext3",
+          "description": "Type the desired text",
+          "label": "Changes the third red text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "rtext3"
+        },
+        {
+          "field": "rtext4",
+          "description": "Type the desired text",
+          "label": "Changes the fourth red text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "rtext4"
+        },
+        {
+          "field": "btext1",
+          "description": "Type the desired text",
+          "label": "Changes the first black text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "btext1"
+        },
+        {
+          "field": "btext2",
+          "description": "Type the desired text",
+          "label": "Changes the second black text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "btext2"
+        },
+        {
+          "field": "btext3",
+          "description": "Type the desired text",
+          "label": "Changes the third black text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "btext3"
+        },
+        {
+          "field": "btext4",
+          "description": "Type the desired text",
+          "label": "Changes the fourth black text",
+          "type": "textfield",
+          "json-expose": true,
+          "json-property": "btext4"
+        }
+      ]
+    }
+  }
