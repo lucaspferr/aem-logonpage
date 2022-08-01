@@ -19,7 +19,7 @@ if(process.env.REACT_APP_PROXY_ENABLED) {
 
 const renderApp = () => {
     ModelManager.initialize(modelManagerOptions).then(pageModel => {
-        const history = createBrowserHistory();
+        const history = createBrowserHistory({ forceRefresh: true });
         render(
             <Router history={history}>
                 <App

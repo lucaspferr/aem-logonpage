@@ -63,4 +63,4 @@ const ClockComponent = () => {
 
 }
 
-export default MapTo('logoncompass/components/clock-component')(ClockComponent);
+export default MapTo('reactapp/components/clock-component')(ClockComponent);

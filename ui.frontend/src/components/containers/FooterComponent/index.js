@@ -3,12 +3,16 @@ import { HomeFooterButtonKeep, HomeFooterButtonLog, HomeFooterButtonContainer, H
 import { MapTo } from "@adobe/aem-react-editable-components";
 import CountdownComponent from "../../micro/CountdownComponent";
 import { CounterContext } from "../../micro/CountdownComponent/CounterContext";
-
+// import { useHistory } from "react-router-dom";
 
 const FooterComponent = props => {
 
   const counter = React.useContext(CounterContext);
+  // let history = useHistory();
 
+  // if(!localStorage.getItem("token")) {
+  //   history.push("/content/reactapp/us/en/compasslogin.html?wcmmode=disabled");
+  // }
   return (
       <HomeFooterContainer>
         <HomeFooterText>

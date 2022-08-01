@@ -1,23 +1,24 @@
 import React from "react";
 import { MapTo } from "@adobe/aem-react-editable-components";
-import { Link } from "react-router-dom";
 import user_icon from "./images/icon-user.svg";
 import pass_icon from "./images/icon-password.svg";
 import InputComponent from "../../micro/InputComponent";
 import ButtonComponent from "../../micro/ButtonComponent";
 import { Container, DivForm, DivExtern, DivInputs, InvalidText, InvalidTextContainer, Title, Text, TitleForm, DivTexts } from "./styles";
 import ImageLoginComponent from "../../micro/ImageLoginComponent";
+import { useHistory } from "react-router-dom";
 
 const LoginComponent = props => {
 
     const [form, setForm] = React.useState({ username: "", password: "" });
     const [borderColor, setBorderColor] = React.useState("#fff");
+    let history = useHistory();
 
     function handleSubmit(event) {
         event.preventDefault();
         if (form.username === "admin" && form.password === "admin") {
-            alert("Login Successful");
-            // loggedin("/content/logoncompass/us/en/compasslogin/compasshome.html");
+            localStorage.setItem("token", "admin");
+            history.push("/content/reactapp/us/en/compasshome.html?wcmmode=disabled");
         } else {
             setBorderColor("#E9B425");
         }
@@ -52,7 +53,7 @@ const LoginComponent = props => {
                             </InvalidTextContainer>
                         </DivInputs>
                         {/* <Link to="/content/logoncompass/us/en/compasshome.html?wcmmode=disabled"> */}
-                            <ButtonComponent type='submit' value={props.buttontext ? props.buttontext : "Continuar"} />
+                        <ButtonComponent type='submit' value={props.buttontext ? props.buttontext : "Continuar"} />
                         {/* </Link> */}
                     </DivForm>
                 </form>

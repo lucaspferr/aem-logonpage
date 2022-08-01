@@ -39,4 +39,4 @@ export const WeatherComponent = () => {
   );
 }
 
-export default MapTo('logoncompass/components/weather-component')(WeatherComponent);
+export default MapTo('reactapp/components/weather-component')(WeatherComponent);

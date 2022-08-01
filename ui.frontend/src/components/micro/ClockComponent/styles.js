@@ -16,6 +16,9 @@ export const ClockTime = styled.h1`
     line-height: 110px;
     margin: 0;
     text-align: center;
+    @media (max-width: 1000px) {
+        font-size: 80px;
+    }
     `;
 
 export const ClockDate = styled.p`
