@@ -25,6 +25,7 @@ import './micro/WeatherComponent';
 import './containers/LoginComponent';
 import './containers/FooterComponent';
 import './containers/BodyComponent';
+import './containers/ImageExample';
 
 import { MapTo } from "@adobe/aem-react-editable-components";
 

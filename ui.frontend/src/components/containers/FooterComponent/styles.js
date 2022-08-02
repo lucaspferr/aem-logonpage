@@ -17,11 +17,12 @@ export const HomeFooterContainer = styled.footer`
 export const HomeFooterText = styled.p`
     height: 50px;
     border-right: 2px solid #fff;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 400;
     color: white;
+    width: 40vw;
     margin: 0;
-    padding-left: 100px;
+    padding-left: 10vw;
     padding-right: 20px;
     text-align: center;
     vertical-align: center;
